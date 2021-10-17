@@ -11,3 +11,4 @@ def cadastraReceitas():
     return {"Receita": 1}    
 app.run()
 
+#master
