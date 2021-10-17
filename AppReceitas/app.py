@@ -50,14 +50,14 @@ def cadastroID(indice):
             "message": message,
             "status": "Error!"
         })
-    # Verifica se o método da requisição é GET
+    
     if request.method == 'GET':
         return receitas[indice]
-    # Caso não seja GET verifica se é PUT
+
     elif request.method == 'PUT':
-        # newValue recebe os dados do corpo da requisição e passa para o formato json
+       
         newValue = json.loads(request.data)
-        # Altera o valor da lista no indice informado com o novo valor recebido
+
         receitas[indice] = newValue
         return jsonify({
             "message": "Updated!",
