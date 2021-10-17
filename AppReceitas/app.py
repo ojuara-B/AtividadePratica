@@ -1,14 +1,17 @@
 from flask import Flask
+from werkzeug.datastructures import RequestCacheControl
 
 app = Flask("Livro de Receitas")
 
-@app.route("/Livro_de_receitas", methods=["GET"])
-def Livro_de_receitas():
+@app.route("/livros", methods=["GET"])
+def Livrodereceitas():
     return {"Livro": "de receitas"}
 
-@app.route("/cadastra/Receitas", methods=["POST"])
-def cadastraReceitas():
-    return {"Receita": 1}    
+@app.route("/cadastro/Receitas", methods=["POST"])
+def cadastroReceitas():
+    body = Request.get_json()
+    print(body)
+    return body    
 app.run()
 
-#master
+
