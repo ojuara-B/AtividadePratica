@@ -10,7 +10,7 @@ def Livro_de_receitas():
 def cadastraReceitas():
     return {"Receita": 1} 
 
-    # jdjd
+    # 
 
 app.run()
 
