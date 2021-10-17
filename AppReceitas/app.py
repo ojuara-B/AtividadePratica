@@ -8,6 +8,9 @@ def Livro_de_receitas():
 
 @app.route("/cadastra/Receitas", methods=["POST"])
 def cadastraReceitas():
-    return {"Receita": 1}    
+    return {"Receita": 1} 
+
+    # jdjd
+
 app.run()
 
